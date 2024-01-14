@@ -1,18 +1,18 @@
-Certainly! Below is a technical write-up for the USB Locker project available at https://github.com/muhammedadnanv/usb-locker.git.
+Certainly! Below is a technical write-up for the YouTubeV project available at https://github.com/muhammedadnanv/youtubev.git.
 
 ---
 
-# USB Locker
+# YouTubeV
 
 ## Overview
 
-USB Locker is a simple Python script that allows users to control access to USB storage devices on a Windows system. The script uses the `pywinusb` library to monitor USB devices and can either allow or block them based on user configuration.
+YouTubeV is a Python script that enables users to download videos from YouTube using the `pytube` library. It provides a command-line interface (CLI) to download videos in various formats and resolutions.
 
 ## Features
 
-- **Device Monitoring**: Monitors connected USB devices in real-time.
-- **Allowlisting**: Users can specify allowed USB devices, preventing unauthorized devices from mounting.
-- **Blocking Mechanism**: If a USB device is not in the allowlist, it can be blocked from accessing the system.
+- **Video Download**: Download YouTube videos with ease.
+- **Format and Resolution Options**: Choose from available formats and resolutions for downloaded videos.
+- **Command-Line Interface (CLI)**: Simple and straightforward interaction through the command line.
 
 ## Prerequisites
 
@@ -24,8 +24,8 @@ USB Locker is a simple Python script that allows users to control access to USB 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/muhammedadnanv/usb-locker.git
-   cd usb-locker
+   git clone https://github.com/muhammedadnanv/youtubev.git
+   cd youtubev
    ```
 
 2. **Install Dependencies:**
@@ -37,28 +37,31 @@ USB Locker is a simple Python script that allows users to control access to USB 
 3. **Run the Script:**
 
    ```bash
-   python usb_locker.py
+   python youtubev.py [video_url]
    ```
 
-   The script will start monitoring for USB devices and block any USB storage devices not in the allowlist.
+   Replace `[video_url]` with the URL of the YouTube video you want to download.
 
-4. **Stop Monitoring:**
+4. **Follow On-screen Instructions:**
 
-   Press Enter to stop monitoring.
+   The script will prompt you to choose the format and resolution for the downloaded video.
+
+5. **Download Completion:**
+
+   Once the download is complete, the video will be saved in the same directory as the script.
 
 ## Configuration
 
-- Edit the script to customize the list of allowed devices and adjust the blocking mechanism as needed.
+- Edit the script to customize any default settings or add additional features based on the `pytube` library documentation.
 
 ## Considerations
 
-- This script is specific to Windows and relies on the `pywinusb` library.
-- Blocking USB devices may have system-wide consequences, use with caution.
-- Always test in a controlled environment to understand the impact.
+- Respect YouTube's terms of service when using this tool.
+- Be aware of copyright regulations and permissions for downloading and using videos.
 
 ## Acknowledgments
 
-This project is based on the `pywinusb` library and serves as an educational example for controlling USB device access in a Windows environment.
+This project utilizes the `pytube` library for interacting with YouTube and serves as a simple tool for video downloading.
 
 ## License
 
@@ -70,4 +73,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feel free to customize this technical write-up based on additional details or specific instructions from the project's documentation.
+Feel free to modify this technical write-up based on additional details or specific instructions from the project's documentation.
